@@ -11,6 +11,14 @@ android {
         versionCode 1
         versionName "1.0"
     }
+    productFlavors{
+        free{
+            applicationId 'com.udacity.gradle.builditbigger.free'
+        }
+        paid{
+            applicationId 'com.udacity.gradle.builditbigger.paid'
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
