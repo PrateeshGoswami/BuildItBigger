@@ -33,4 +33,5 @@ dependencies {
     // Added for AdMob
     freeCompile 'com.google.android.gms:play-services:8.4.0'
     compile project(':libjokesprovider')
+    compile project(':libjokeactivity')
 }
