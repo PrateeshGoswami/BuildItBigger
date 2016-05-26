@@ -1,6 +1,6 @@
 {
  "kind": "discovery#restDescription",
- "etag": "\"H01Z-1ikbwOw463Un2bFZHenx1g/cf-2UdCBGwo0MhGwQd8siRYyZPQ\"",
+ "etag": "\"H01Z-1ikbwOw463Un2bFZHenx1g/btBFgKi21pzeu_ZGLBMYMcBAmUY\"",
  "discoveryVersion": "v1",
  "id": "myApi:v1",
  "name": "myApi",
@@ -13,9 +13,9 @@
   "x32": "http://www.google.com/images/icons/product/search-32.gif"
  },
  "protocol": "rest",
- "baseUrl": "https://tactile-anthem-132323.appspot.com/_ah/api/myApi/v1/",
+ "baseUrl": "https://default-demo-app-8e3e0.appspot.com/_ah/api/myApi/v1/",
  "basePath": "/_ah/api/myApi/v1/",
- "rootUrl": "https://tactile-anthem-132323.appspot.com/_ah/api/",
+ "rootUrl": "https://default-demo-app-8e3e0.appspot.com/_ah/api/",
  "servicePath": "myApi/v1/",
  "batchPath": "batch",
  "parameters": {

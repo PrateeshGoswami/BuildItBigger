@@ -6,7 +6,7 @@ public class Joker {
     private static String[] jokes;
 
     static {
-        jokes = new String[12];
+        jokes = new String[13];
         jokes[0] = "Q: Why do java programmers wear glasses?\n" +
                 "A: Because they can't C.";
         jokes[1] = "Can a kangaroo jump higher than a house? " +
