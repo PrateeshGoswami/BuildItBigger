@@ -31,23 +31,23 @@ public class EndPointAsyncTask extends AsyncTask<Pair<Context, String>, Void, St
     protected String doInBackground(Pair<Context, String>... params) {
         if (myApiService == null) {
             MyApi.Builder builder = new MyApi.Builder(AndroidHttp.newCompatibleTransport(),
-                                        new AndroidJsonFactory(), null)
-                                        .setRootUrl("https://default-demo-app-8e3e0.appspot.com/_ah/api/");
-                        myApiService = builder.build();
-                    }
-                try {
-                        return myApiService.sendJoke(new MyBean()).execute().getJoke();
-                    } catch (IOException e) {
-                        return e.getMessage();
-                    }
-            }
-
-                @Override
-        protected void onPostExecute(String result) {
-                    Log.d("Test jokes :",result);
-                Intent intent = new Intent(context, JokeActivity.class);
-                intent.putExtra("joke", result);
-                intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
-                context.startActivity(intent);
-            }
+                    new AndroidJsonFactory(), null)
+                    .setRootUrl("https://default-demo-app-8e3e0.appspot.com/_ah/api/");
+            myApiService = builder.build();
+        }
+        try {
+            return myApiService.sendJoke(new MyBean()).execute().getJoke();
+        } catch (IOException e) {
+            return e.getMessage();
+        }
     }
+
+    @Override
+    protected void onPostExecute(String result) {
+        Log.d("Test jokes :", result);
+        Intent intent = new Intent(context, JokeActivity.class);
+        intent.putExtra("joke", result);
+        intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(intent);
+    }
+}

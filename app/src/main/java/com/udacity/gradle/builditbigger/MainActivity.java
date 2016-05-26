@@ -38,7 +38,7 @@ public class MainActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void tellJoke(View view){
+    public void tellJoke(View view) {
 //        Joker joker = new Joker();
 //        Intent intent = new Intent(this, JokeActivity.class);
 //        intent.putExtra(JokeActivity.JOKE_KEY, joker.getJoke());

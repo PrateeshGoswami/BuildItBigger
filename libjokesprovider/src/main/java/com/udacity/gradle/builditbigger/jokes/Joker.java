@@ -19,11 +19,11 @@ public class Joker {
         jokes[3] = "It is so cold outside I saw a politician with his hands in his own pockets";
         jokes[4] = "My dog used to chase people on a bike a lot. It got so bad, finally I had to take his bike away";
         jokes[5] = "Police officer: Can you identify yourself, sir?" +
-                   "Driver pulls out his mirror and says:Yes, it's me.";
+                "Driver pulls out his mirror and says:Yes, it's me.";
         jokes[6] = "When my wife starts to sing I always go out and do some " +
                 "garden work so our neighbors can see there's no domestic violence going on";
         jokes[7] = "How can you tell you have a really bad case of acne?" +
-                   "It’s when the blind try to read your face.";
+                "It’s when the blind try to read your face.";
         jokes[8] = "Q. Why do the French like to eat snails so much?\n" +
                 "A. They can’t stand fast food.";
         jokes[9] = "Husband: “Oh the weather is lovely today. Shall we go out for a quick jog?" +

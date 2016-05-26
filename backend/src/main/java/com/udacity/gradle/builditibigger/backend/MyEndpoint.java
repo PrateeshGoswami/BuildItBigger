@@ -10,21 +10,23 @@ import com.google.api.server.spi.config.Api;
 import com.google.api.server.spi.config.ApiMethod;
 import com.google.api.server.spi.config.ApiNamespace;
 
-/** An endpoint class we are exposing */
+/**
+ * An endpoint class we are exposing
+ */
 @Api(
-  name = "myApi",
-  version = "v1",
-  namespace = @ApiNamespace(
-    ownerDomain = "backend.builditibigger.gradle.udacity.com",
-    ownerName = "backend.builditibigger.gradle.udacity.com",
-    packagePath=""
-  )
+        name = "myApi",
+        version = "v1",
+        namespace = @ApiNamespace(
+                ownerDomain = "backend.builditibigger.gradle.udacity.com",
+                ownerName = "backend.builditibigger.gradle.udacity.com",
+                packagePath = ""
+        )
 )
 public class MyEndpoint {
 
-   @ApiMethod(name = "sendJoke")
-    public MyBean sendJoke(MyBean myBean){
-       return myBean;
-   }
+    @ApiMethod(name = "sendJoke")
+    public MyBean sendJoke(MyBean myBean) {
+        return myBean;
+    }
 
 }
