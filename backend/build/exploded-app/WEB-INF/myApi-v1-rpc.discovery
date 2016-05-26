@@ -1,6 +1,6 @@
 {
  "kind": "discovery#rpcDescription",
- "etag": "\"H01Z-1ikbwOw463Un2bFZHenx1g/gDPrIvOCWvxJHMoggzSgTjww1bo\"",
+ "etag": "\"H01Z-1ikbwOw463Un2bFZHenx1g/cf-2UdCBGwo0MhGwQd8siRYyZPQ\"",
  "discoveryVersion": "v1",
  "id": "myApi:v1",
  "name": "myApi",
@@ -13,8 +13,8 @@
   "x32": "http://www.google.com/images/icons/product/search-32.gif"
  },
  "protocol": "rpc",
- "rootUrl": "https://myApplicationId.appspot.com/_ah/api/",
- "rpcUrl": "https://myApplicationId.appspot.com/_ah/api/rpc",
+ "rootUrl": "https://tactile-anthem-132323.appspot.com/_ah/api/",
+ "rpcUrl": "https://tactile-anthem-132323.appspot.com/_ah/api/rpc",
  "rpcPath": "/_ah/api/rpc",
  "parameters": {
   "alt": {
@@ -75,23 +75,22 @@
    "id": "MyBean",
    "type": "object",
    "properties": {
-    "data": {
+    "joke": {
      "type": "string"
     }
    }
   }
  },
  "methods": {
-  "myApi.sayHi": {
-   "id": "myApi.sayHi",
+  "myApi.sendJoke": {
+   "id": "myApi.sendJoke",
    "parameters": {
-    "name": {
-     "type": "string",
-     "required": true
+    "resource": {
+     "$ref": "MyBean"
     }
    },
    "parameterOrder": [
-    "name"
+    "resource"
    ],
    "returns": {
     "$ref": "MyBean"

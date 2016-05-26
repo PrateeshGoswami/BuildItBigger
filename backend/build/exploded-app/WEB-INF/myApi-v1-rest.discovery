@@ -1,6 +1,6 @@
 {
  "kind": "discovery#restDescription",
- "etag": "\"H01Z-1ikbwOw463Un2bFZHenx1g/gDPrIvOCWvxJHMoggzSgTjww1bo\"",
+ "etag": "\"H01Z-1ikbwOw463Un2bFZHenx1g/cf-2UdCBGwo0MhGwQd8siRYyZPQ\"",
  "discoveryVersion": "v1",
  "id": "myApi:v1",
  "name": "myApi",
@@ -13,10 +13,10 @@
   "x32": "http://www.google.com/images/icons/product/search-32.gif"
  },
  "protocol": "rest",
- "baseUrl": "https://myApplicationId.appspot.com/_ah/api/myApi/v1/sayHi/",
- "basePath": "/_ah/api/myApi/v1/sayHi/",
- "rootUrl": "https://myApplicationId.appspot.com/_ah/api/",
- "servicePath": "myApi/v1/sayHi/",
+ "baseUrl": "https://tactile-anthem-132323.appspot.com/_ah/api/myApi/v1/",
+ "basePath": "/_ah/api/myApi/v1/",
+ "rootUrl": "https://tactile-anthem-132323.appspot.com/_ah/api/",
+ "servicePath": "myApi/v1/",
  "batchPath": "batch",
  "parameters": {
   "alt": {
@@ -77,27 +77,21 @@
    "id": "MyBean",
    "type": "object",
    "properties": {
-    "data": {
+    "joke": {
      "type": "string"
     }
    }
   }
  },
  "methods": {
-  "sayHi": {
-   "id": "myApi.sayHi",
-   "path": "{name}",
+  "sendJoke": {
+   "id": "myApi.sendJoke",
+   "path": "sendJoke",
    "httpMethod": "POST",
-   "parameters": {
-    "name": {
-     "type": "string",
-     "required": true,
-     "location": "path"
-    }
+   "request": {
+    "$ref": "MyBean",
+    "parameterName": "resource"
    },
-   "parameterOrder": [
-    "name"
-   ],
    "response": {
     "$ref": "MyBean"
    },

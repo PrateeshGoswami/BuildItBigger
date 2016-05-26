@@ -26,7 +26,7 @@ public class JokeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_joke, container, false);
         TextView jokeTextView = (TextView) view.findViewById(R.id.joke_text);
-        String joke = getActivity().getIntent().getStringExtra(JokeActivity.JOKE_KEY);
+        String joke = getActivity().getIntent().getStringExtra("joke");
         if (joke != null && joke.length() != 0) {
             jokeTextView.setText(joke);
         }
